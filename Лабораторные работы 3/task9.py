@@ -7,11 +7,11 @@ money_capital = 0  # количество денег, чтобы прожить 
 
 # TODO Оформить решение
 while True:
-    if months == 0:
-        break
-    dengi = spend - salary
+    if months == 0:  # цикл выполняется до тех пор, пока не закончатся месяцы
+        break  # как только проейдет заданное кол-во времени, цикл прервется
+    dengi = spend - salary  # разница между тратами и зарплатой
     months -= 1
-    money_capital += dengi
-    spend *= 1 + increase
+    money_capital += dengi  # капитал формируется из разницы трат и зарплаты
+    spend *= 1 + increase  # с кажным месяцем цены увеличиваются на 3%
 
-print(round(money_capital))
+print(round(money_capital))   до целого полученную подушку безопасности, округляя ее до целого
