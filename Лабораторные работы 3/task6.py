@@ -11,7 +11,7 @@ for i, current_num in enumerate(list_numbers):  # перебераем все п
         max_index = i # то перезаписываем индекс максимального числа
 
 
-list_numbers[max_index], list_numbers[len(list_numbers)-1] = current_num, max_number   # зпменяем значения
+list_numbers[max_index], list_numbers[len(list_numbers)-1] = current_num, max_number   # заменяем значения
 
 
 print(list_numbers)  # Ответ [2, 90, -2, 8, -36, -44, -1, -85, -14, 25, -22, -90, -100, -8, 38, -92, -45, 67, 53, 90]
