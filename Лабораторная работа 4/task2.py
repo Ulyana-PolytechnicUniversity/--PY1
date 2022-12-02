@@ -1,13 +1,13 @@
 def get_count_char(str_):
     word_dict = {}
     str_ = str_.lower()  # переводим в нижний регистр
-
-    for word in str_:  # перебираем элементы
-        if word.isalpha():
-            if word in word_dict:
-                word_dict[word] += 1
+    
+    for el in str_:
+        if el.isalpha():
+            if word_dict.get(el, None):
+                word_dict[el] += 1
             else:
-                word_dict[word] = 1
+                word_dict[el] = 1
     return word_dict
 
 main_str = """
