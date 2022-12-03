@@ -4,10 +4,8 @@ def get_count_char(str_):
     
     for el in str_:
         if el.isalpha():
-            if word_dict.get(el, None):
-                word_dict[el] += 1
-            else:
-                word_dict[el] = 1
+            word_dict[el] = word_dict.get(el, 0) + 1
+            
     return word_dict
 
 main_str = """
