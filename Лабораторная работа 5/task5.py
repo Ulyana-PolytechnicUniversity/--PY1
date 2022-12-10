@@ -1,16 +1,17 @@
-def get_random_password() -> str:
-    import random
-    import string
+from random import sample
+from string import ascii_lowercase
+from string import ascii_uppercase
+from string import digits
 
-    length_password = 8
-    lower_words = string.ascii_lowercase
-    upper_words = string.ascii_uppercase
-    numbers = string.digits
+def get_random_password(a) -> str:
 
-    all_simbols = lower_words + upper_words + numbers
+    lower_words = ascii_lowercase
+    upper_words = ascii_uppercase
+    numbers = digits
 
-    password = "".join(random.sample(all_simbols, length_password))
+    password = "".join(sample(lower_words + upper_words + numbers, a))
 
     return password
 
-print(get_random_password())
+
+print(get_random_password(8))
