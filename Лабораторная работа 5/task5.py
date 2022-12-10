@@ -3,13 +3,9 @@ from string import ascii_lowercase
 from string import ascii_uppercase
 from string import digits
 
-def get_random_password(a) -> str:
+def get_random_password(n) -> str:  #n-количество символов в пароле
 
-    lower_words = ascii_lowercase
-    upper_words = ascii_uppercase
-    numbers = digits
-
-    password = "".join(sample(lower_words + upper_words + numbers, a))
+    password = "".join(sample(ascii_lowercase + ascii_uppercase + digits, n))
 
     return password
 
