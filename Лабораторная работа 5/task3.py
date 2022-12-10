@@ -1,7 +1,6 @@
+from random import randint
 def get_unique_list_numbers() -> list[int]:
-    from random import randint
-    numbers = []
-    for i in range(15):
+    while len(numbers) < 16:
         num = randint(-10, 10)
         if num not in numbers:
             numbers.append(num)
