@@ -1,7 +1,5 @@
 from random import sample
-from string import ascii_lowercase
-from string import ascii_uppercase
-from string import digits
+from string import ascii_lowercase, ascii_uppercase, digits
 
 def get_random_password(n) -> str:  #n-количество символов в пароле
 
