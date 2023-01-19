@@ -79,12 +79,13 @@ class Bottle:
         Метод вычисляет объем воды после добавления.
         >>> bottle = Bottle(5, 2)
         >>> bottle.add_water(5)
+        7
         """
         if not isinstance(water, int):
             raise TypeError("Объем бутылки должен быть типа int")
         if water <= 0:
             raise ValueError("Объем должен быть положительным числом")
-        self.water_volume += water
+        return self.water_volume + water
 
     def difference_between_volumes(self):
         """
