@@ -60,9 +60,9 @@ class Library:
 
     def get_index_by_book_id(self, id_new: int) -> int:
         if not isinstance(id_new, int):
-            raise TypeError("id должен быть типа int")
+            raise TypeError("id_new должен быть типа int")
         if id_new <= 0:
-            raise ValueError("id должен быть положительным числом")
+            raise ValueError("id_new должен быть положительным числом")
         self.id_n = id_new
 
         for ind, el in enumerate(self.books):
