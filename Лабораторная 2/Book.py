@@ -1,11 +1,11 @@
 BOOKS_DATABASE = [
     {
-        "id_": 1,
+        "id": 1,
         "name": "test_name_1",
         "pages": 200,
     },
     {
-        "id_": 2,
+        "id": 2,
         "name": "test_name_2",
         "pages": 400,
     }
@@ -22,7 +22,7 @@ class Book:
         if id_ <= 0:
             raise ValueError("id должен быть положительным числом")
 
-        self.id_ = id_
+        self.id = id_
 
         if not isinstance(name, str):
             raise TypeError("name должно быть типа int")
@@ -38,7 +38,7 @@ class Book:
         return f'Книга "{self.name}"'
 
     def __repr__(self) -> str:
-        return f'Book(id_={self.id_!r}, name={self.name!r}, pages={self.pages!r})'
+        return f'Book(id_={self.id!r}, name={self.name!r}, pages={self.pages!r})'
 
 
 if __name__ == '__main__':
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     #инициализируем список книг
 
     list_books = [
-        Book(id_=book_dict["id_"], name=book_dict["name"], pages=book_dict["pages"]) for book_dict in BOOKS_DATABASE
+        Book(id_=book_dict["id"], name=book_dict["name"], pages=book_dict["pages"]) for book_dict in BOOKS_DATABASE
     ]
     for book in list_books:
         print(book)  # проверяем метод __str__
