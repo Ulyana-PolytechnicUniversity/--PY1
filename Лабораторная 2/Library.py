@@ -63,7 +63,7 @@ class Library:
             raise TypeError("id_new должен быть типа int")
         if id_new <= 0:
             raise ValueError("id_new должен быть положительным числом")
-        self.id_n = id_new
+        self.id_new = id_new
 
         for ind, el in enumerate(self.books):
             index = None
