@@ -66,14 +66,13 @@ class Library:
         self.id_n = id_new
 
         for ind, el in enumerate(self.books):
-
+            index = None
             if el.id == id_new:
                 return ind
-            elif ind < self.books[-1].id - 1:
 
-                ind += 1
-            else:
-                raise ValueError("Книги с запрашиваемым id не существует")
+        if index == None:
+             raise ValueError("Книги с запрашиваемым id не существует")
+
 
 
 
