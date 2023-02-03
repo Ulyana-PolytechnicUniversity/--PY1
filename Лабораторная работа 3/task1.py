@@ -55,9 +55,9 @@ class AudioBook(Book):
 
         self.duration = duration
 
-book1 = Book("Евгений онегин1", "Пушкин1")
-book2 = PaperBook("Евгений онегин2", "Пушкин2", 122)
-book3 = AudioBook("Евгений онегин3", "Пушкин3", 12.2)
+book1 = Book("Евгений Онегин1", "Пушкин1")
+book2 = PaperBook("Евгений Онегин2", "Пушкин2", 122)
+book3 = AudioBook("Евгений Онегин3", "Пушкин3", 12.2)
 
 print(book1.__repr__())
 print(book2.__repr__())
