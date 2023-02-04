@@ -26,11 +26,11 @@ class PaperBook(Book):
         self.pages = pages
 
     @property
-    def pages(self):
+    def pages(self) -> str:
         return self._pages
 
     @pages.setter
-    def pages(self, new_pages):
+    def pages(self, new_pages) -> None:
 
         if not isinstance(new_pages, int):
             raise TypeError("Количество страниц должно быть типа int")
@@ -57,11 +57,11 @@ class AudioBook(Book):
         return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, duration ={self.duration!r})"
 
     @property
-    def duration(self):
+    def duration(self) -> str:
         return self._duration
 
     @duration.setter
-    def duration(self, new_duration):
+    def duration(self, new_duration) -> None:
 
         if not isinstance(new_duration, int):
             raise TypeError("Длительность должна быть типа int")
