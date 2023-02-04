@@ -38,10 +38,10 @@ class PaperBook(Book):
             raise ValueError("Количество страниц должно быть положительным числом")
         self._pages = new_pages
 
-    def __str__(self) -> str: #хочу видеть все атрибуты, поэтому перегружаем str, так как добавляется аргумент pages
+    def __str__(self) -> str: #хочу видеть всю информацию о книге, поэтому перегружаем str, так как добавляется аргумент pages
         return f"Книга {self.name}. Автор {self.author}. Количество страниц {self.pages}"
 
-    def __repr__(self) -> str: #хочу видеть все атрибуты, поэтому перегружаем repr, так как добавляется аргумент pages
+    def __repr__(self) -> str: #хочу видеть всю информацию о книге, поэтому перегружаем repr, так как добавляется аргумент pages
         return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, pages = {self.pages!r})"
 
 
@@ -50,10 +50,10 @@ class AudioBook(Book):
         super().__init__(name, author)
         self.duration = duration
 
-    def __str__(self) -> str: #хочу видеть все атрибуты, поэтому перегружаем str, так как добавляется аргумент duration
+    def __str__(self) -> str: #хочу видеть всю информацию о книге, поэтому перегружаем str, так как добавляется аргумент duration
         return f"Книга {self.name}. Автор {self.author}. Длительность {self.duration}"
 
-    def __repr__(self) -> str: #хочу видеть все атрибуты, поэтому перегружаем repr, так как добавляется аргумент duration
+    def __repr__(self) -> str: #хочу видеть всю информацию о книге, поэтому перегружаем repr, так как добавляется аргумент duration
         return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, duration ={self.duration!r})"
 
     @property
