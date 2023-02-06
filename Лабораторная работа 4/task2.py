@@ -9,6 +9,8 @@ def get_count_char(str_):
     return word_dict
 
 main_str = """
+
+
 У лукоморья дуб зелёный;
 Златая цепь на дубе том:
 И днём и ночью кот учёный
