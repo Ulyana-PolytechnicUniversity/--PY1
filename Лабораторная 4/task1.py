@@ -49,6 +49,10 @@ if __name__ == "__main__":
 
 
     class Truck(Automobile):
+    """
+        Дочерний класс грузовые автомобили.
+        :param load_capacity: грузоподъемность
+    """
         def __init__(self, car_brand: str, price: int, load_capacity: int):
             super().__init__(car_brand, price)
             self.load_capacity = load_capacity
@@ -70,6 +74,10 @@ if __name__ == "__main__":
 
 
     class Car(Automobile):
+    """
+        Дочерний класс лекговые автомобили.
+        :param color: цвет
+    """
         def __init__(self, car_brand: str, price: int, color: str):
             super().__init__(car_brand, price)
 
